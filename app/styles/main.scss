@@ -1,7 +1,7 @@
 @import 'sass-bootstrap/lib/bootstrap';
 
 $mahBloo: #0090f4;
-
+$anOrange: #F5903D;
 .opacityAnim {
 	transition: opacity 0.2s;
 }
@@ -10,7 +10,7 @@ $mahBloo: #0090f4;
 	padding: 100px 0;
     background: #222;
     text-align: center;
-    border-bottom: 5px solid #F5903D;
+    border-bottom: 5px solid $anOrange;
 }
 
 #jumbotron .inner {
@@ -44,11 +44,14 @@ $mahBloo: #0090f4;
 h2 {
 	font-family: 'Lato', sans-serif;
 	font-weight: bold;
+	color: $mahBloo;	
 }
 
 section {
 	max-width: 800px;
+	padding-top: 50px;
 	margin: 0 auto 100px;
+	font-family: 'Droid Sans', sans-serif;
 }
 
 // section.career {
@@ -67,3 +70,19 @@ section {
 // section.career h2 {
 // 	color: white;
 // }
+
+section.career ul {
+	margin: 2em 0 0;
+
+	li {
+		list-style: none outside;
+		border-bottom: 1px solid #C14913;
+		margin: 1em 0 0;
+		padding: 0 0 1em;
+	}
+
+	img {
+		float: right;
+		height: 50px;
+	}
+}

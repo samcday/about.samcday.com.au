@@ -1,5 +1,7 @@
 @import 'sass-bootstrap/lib/bootstrap';
 
+$mahBloo: #0090f4;
+
 .opacityAnim {
 	transition: opacity 0.2s;
 }
@@ -21,7 +23,7 @@
 #jumbotron h1 {
 	font-size: 9em;
 	margin-left: 0.2em;
-    color: #0090f4;
+    color: $mahBloo;
     line-height: 1em;
 	font-family: 'Lato', sans-serif;
 	display: inline-block;
@@ -39,3 +41,29 @@
 	font-size: 1.5em;
 }
 
+h2 {
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+}
+
+section {
+	max-width: 800px;
+	margin: 0 auto 100px;
+}
+
+// section.career {
+// 	width: 100%;
+// 	max-width: none;
+// 	margin: 0;
+// 	background: #222;
+// 	color: white;
+// }
+
+// section.career > div {
+// 	margin: 0 auto;
+// 	max-width: 800px;
+// }
+
+// section.career h2 {
+// 	color: white;
+// }

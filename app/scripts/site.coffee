@@ -9,6 +9,13 @@ jQuery ($) ->
 	$navbar.css opacity: 0
 	$navbar.addClass "opacityAnim"
 
+	$navbar.on "click", "a", (ev) ->
+		# var aTag = $("a[name='"+ aid +"']");
+		# $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+		target = ($ ev.target).attr "href"
+		($ "body").animate { scrollTop: ($ target).offset().top }, "slow", "easeInOutQuad"
+		return false
+
 	siteInit = ->
 
 		jumbotronHeight = $jumbotron.outerHeight()

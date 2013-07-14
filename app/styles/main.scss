@@ -96,6 +96,11 @@ section#career ul.list {
     display: block;
 }
 
+.moderate, .verbose {
+    -webkit-animation-duration: 400ms !important;
+    animation-duration: 400ms !important;
+}
+
 .moderate {
     display: none;
     position: relative;

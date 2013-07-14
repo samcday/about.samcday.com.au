@@ -98,14 +98,16 @@ section#career ul.list {
 
 .moderate {
     display: none;
+    position: relative;
 }
 .verbose {
     display: none;
+    position: relative;
 }
-
+/*
 body.show-moderate span.moderate {
-    display: inline;
+    display: inline-block;
 }
 body.show-verbose span.verbose {
-    display: inline;
-}
+    display: inline-block;
+}*/

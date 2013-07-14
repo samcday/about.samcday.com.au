@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="styles/main.css">
         <link href='http://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="components/dragdealer/dragdealer.css">
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
@@ -31,23 +32,32 @@
         </div>
 
         <header id="jumbotron">
-            <div class="inner">
-                <img class="selfie" src="//gravatar.com/avatar/e7c064c43f9a2e3deaae9488e51a46ac?s=200">
-                <h1>Samuel C. Day</h1><br/>
-                <summary>... is a 23 year old software engineer from Brisbane, Australia.</summary>
+            <div id="verbosity-meter" class="btn-group" data-toggle="buttons-radio">
+              <button type="button" class="btn btn-primary active" data-verbosity="terse">Terse</button>
+              <button type="button" class="btn btn-primary" data-verbosity="moderate">Moderate</button>
+              <button type="button" class="btn btn-primary" data-verbosity="verbose">Verbose</button>
+            </div>
+
+            <div class="inner" style="display: table; width: 10px;">
+                <div style="display: table-cell;">
+                <img class="selfie" width=200 height=200 src="//gravatar.com/avatar/e7c064c43f9a2e3deaae9488e51a46ac?s=200">
+                <h1>Sam<span class="moderate">uel</span><span class="verbose"> C.</span> Day</h1>
+                <br/>
+                <summary>... is a <span class="moderate">23 year old</span> <span class="verbose">polyglot, full-stack</span> software engineer from <span class="moderate">Brisbane,</span> Australia<span class="verbose"> that enjoys coffee, music, long walks on the beach, and talking alot</span>.</summary>
+                </div>
             </div>
         </header>
 
         <section id="about">
             <h2>Hey.</h2>
             <p>If you're reading this, chances are you're either my potential
-            future employer, secret admirer/stalker, or a casual netizen who 
+            future employer, secret admirer/stalker, or a casual netizen who
             got bored of pictures of cute kittens and Facebook. Whatever the
             case, welcome! You're a great <del>guy</del> <del>gal</del> <del>
             crawler bot</del> entity. I think we can be friends!</p>
 
             <p>But seriously though, thanks for taking the time to check out my
-            page. People like you make the blood, sweat, and tears that went 
+            page. People like you make the blood, sweat, and tears that went
             into the production of this page all worthwhile. You've made someone
             very happy. You can go through the rest of today telling yourself
             "Hey. I made a difference for that guy on the internet today".</p>
@@ -89,8 +99,8 @@ confident and proficient developer, able to tackle any task big or small.
 I have gained great rapport with my coworkers and my superiors alike. Together
 with the teams I have worked with, I have released several high projects on the
 main Wotif.com site successfully. These includes Wotif.com's foray into
-<a href="http://wotif.com/holiday-rentals" target="_blank">Holiday Rentals</a>, 
-<a href="http://wotif.com/hotel/View?hotel=W1649#reviews">Hotel Reviews</a>, and 
+<a href="http://wotif.com/holiday-rentals" target="_blank">Holiday Rentals</a>,
+<a href="http://wotif.com/hotel/View?hotel=W1649#reviews">Hotel Reviews</a>, and
 many other enhancements (cosmetic and functionality) on the main site.</p>
 <p>The Wotif.com Reviews project in particular was an amazing experience for me,
 as I was instrumental in making its release a success. This success led to some
@@ -124,7 +134,7 @@ office.</p>
 <p>
     At Sauce Software, I was responsible for initial estimation, analysis,
     design, implementation and deployment for many medium sized web applications
-    for a range of clients. Many of the projects I worked on were time and 
+    for a range of clients. Many of the projects I worked on were time and
     budget sensitive, and I was able to deliver quality results on time and on
     budget in most cases. I was also tasked with maintaining several original
     IP systems Sauce had implemented.</p>
@@ -136,18 +146,18 @@ office.</p>
     Sauce, and provided a higher level of fault tolerance and isolation of our
     shared hosting clients.</p>
 <p>
-    When it came time for me to move on to Wotif.com Pty Ltd, I was asked to 
+    When it came time for me to move on to Wotif.com Pty Ltd, I was asked to
     remain involved with Sauce. I still assist with system administation duties,
     estimation and development work, and other consultation services.</p>
 
 <div class="tldr">
     <h5>TL;DR</h5>
     <ul>
-        <li>Involved in every phase of SDLC for many medium sized web 
+        <li>Involved in every phase of SDLC for many medium sized web
             applications</li>
         <li>Delivery of projects on-time, and on-budget.</li>
         <li>Linux system administration of several servers</li>
-        <li>Conceptualized and handled migration to virtualized hosting 
+        <li>Conceptualized and handled migration to virtualized hosting
             environment for increased reliability and reduced hosting costs.</li>
     </ul>
 </div>
@@ -207,7 +217,7 @@ office.</p>
         <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 
-        <!-- 
+        <!--
         <div class="container">
             <div class="hero-unit">
                 <h1>Samuel C. Day</h1>
@@ -237,6 +247,7 @@ office.</p>
         <script src="components/jquery/jquery.js"></script>
         <script src="components/jquery-throttle-debounce/jquery.ba-throttle-debounce.js"></script>
         <script src="components/jquery-easing/jquery.easing.js"></script>
+        <script src="components/dragdealer/dragdealer.js"></script>
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
 
@@ -251,9 +262,9 @@ office.</p>
         <script src="components/sass-bootstrap/js/bootstrap-dropdown.js"></script>
         <script src="components/sass-bootstrap/js/bootstrap-tooltip.js"></script>
         <script src="components/sass-bootstrap/js/bootstrap-modal.js"></script>
-        <script src="components/sass-bootstrap/js/bootstrap-transition.js"></script>
+        <script src="components/sass-bootstrap/js/bootstrap-transition.js"></script>-->
         <script src="components/sass-bootstrap/js/bootstrap-button.js"></script>
-        <script src="components/sass-bootstrap/js/bootstrap-popover.js"></script>
+        <!--<script src="components/sass-bootstrap/js/bootstrap-popover.js"></script>
         <script src="components/sass-bootstrap/js/bootstrap-typeahead.js"></script>
         <script src="components/sass-bootstrap/js/bootstrap-carousel.js"></script>
         -->

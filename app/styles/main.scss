@@ -3,86 +3,109 @@
 $mahBloo: #0090f4;
 $anOrange: #F5903D;
 .opacityAnim {
-	transition: opacity 0.2s;
+    transition: opacity 0.2s;
 }
 
 #jumbotron {
-	padding: 100px 0;
+    padding: 100px 0;
     background: #222;
     text-align: center;
     border-bottom: 5px solid $anOrange;
-}
 
-#jumbotron .inner {
-	display: inline-block;
-	max-width: 1600px;
-	margin: 0 auto;
-	text-align: left;
-}
+    .inner {
+        position: relative;
+        display: inline-block;
+        margin: 0 auto;
+        text-align: left;
+        padding-left: 210px;
+    }
 
-#jumbotron h1 {
-	font-size: 9em;
-	margin-left: 0.2em;
-    color: $mahBloo;
-    line-height: 1em;
-	font-family: 'Lato', sans-serif;
-	display: inline-block;
-	vertical-align: middle;
-}
+    img.selfie {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        left: 0;
+        border: 5px solid white;
+        border-radius: 105px;
+    }
 
-#jumbotron img.selfie {
-	border: 5px solid white;
-	border-radius: 105px;
-}
+    h1 {
+        font-size: 9em;
+        margin-left: 0.2em;
+        color: $mahBloo;
+        line-height: 1em;
+        font-family: 'Lato', sans-serif;
+        vertical-align: middle;
+        white-space: nowrap;
+    }
 
-#jumbotron summary {
-	float: right;
-	color: white;
-	font-size: 1.5em;
+    summary {
+        text-align: right;
+        color: white;
+        font-size: 1.5em;
+    }
 }
 
 h2 {
-	font-family: 'Lato', sans-serif;
-	font-weight: bold;
-	color: $mahBloo;	
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: $mahBloo;
 }
 
 section {
-	max-width: 800px;
-	padding-top: 50px;
-	margin: 0 auto 100px;
-	font-family: 'Droid Sans', sans-serif;
+    max-width: 800px;
+    padding-top: 50px;
+    margin: 0 auto 100px;
+    font-family: 'Droid Sans', sans-serif;
 }
 
 // section.career {
-// 	width: 100%;
-// 	max-width: none;
-// 	margin: 0;
-// 	background: #222;
-// 	color: white;
+//  width: 100%;
+//  max-width: none;
+//  margin: 0;
+//  background: #222;
+//  color: white;
 // }
 
 // section.career > div {
-// 	margin: 0 auto;
-// 	max-width: 800px;
+//  margin: 0 auto;
+//  max-width: 800px;
 // }
 
 // section.career h2 {
-// 	color: white;
+//  color: white;
 // }
 
 section#career ul.list {
-	margin: 2em 0 0;
+    margin: 2em 0 0;
 
-	li {
-		list-style: none outside;
-		border-bottom: 1px solid #C14913;
-		margin: 1em 0 0;
-		padding: 0 0 1em;
-	}
+    li {
+        list-style: none outside;
+        border-bottom: 1px solid #C14913;
+        margin: 1em 0 0;
+        padding: 0 0 1em;
+    }
 
-	img {
-		float: right;
-		height: 50px;
-	}
+    img {
+        float: right;
+        height: 50px;
+    }
+}
+
+#verbosity-meter {
+    display: block;
+}
+
+.moderate {
+    display: none;
+}
+.verbose {
+    display: none;
+}
+
+body.show-moderate span.moderate {
+    display: inline;
+}
+body.show-verbose span.verbose {
+    display: inline;
 }

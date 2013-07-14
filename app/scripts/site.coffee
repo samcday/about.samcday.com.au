@@ -40,10 +40,6 @@ class BetterVerbosityMeter
 moderateVerbosity = new BetterVerbosityMeter "moderate", 300
 verboseVerbosity = new BetterVerbosityMeter "verbose", 300
 
-setTimeout ->
-    moderateVerbosity.go "show"
-, 1000
-
 jQuery ($) ->
     $win = $ window
     $body = $ document.body
@@ -68,8 +64,8 @@ jQuery ($) ->
     animateVerbosity = ->
 
     siteInit = ->
-        ($ "#verbosity-meter").click (ev) ->
-            level = ($ ev.target).data "verbosity"
+        ($ "#verbosity-meter-container input").bind "slider:changed", (event, data) ->
+            level = ["terse", "moderate", "verbose"][data.value - 1]
             moderateVerbosity.go if level is "terse" then "hide" else "show"
             verboseVerbosity.go if level is "verbose" then "show" else "hide"
 

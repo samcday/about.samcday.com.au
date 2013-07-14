@@ -7,7 +7,8 @@
     "jquery": "~1.9.1",
     "jquery-throttle-debounce": "latest",
     "jquery-easing": "~1.3.0",
-    "javascript-state-machine": "~2.2.0"
+    "javascript-state-machine": "~2.2.0",
+    "jquery-simple-slider": "latest"
   },
   "devDependencies": {}
 }

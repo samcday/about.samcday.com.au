@@ -7,7 +7,7 @@ $anOrange: #F5903D;
 }
 
 #jumbotron {
-    padding: 100px 0;
+    padding: 60px 0 100px;
     background: #222;
     text-align: center;
     border-bottom: 5px solid $anOrange;
@@ -43,6 +43,7 @@ $anOrange: #F5903D;
         text-align: right;
         color: white;
         font-size: 1.5em;
+        line-height: 1.3em;
     }
 }
 
@@ -92,8 +93,29 @@ section#career ul.list {
     }
 }
 
-#verbosity-meter {
+#verbosity-meter-container {
+    text-align: center;
+    margin: 0 auto;
     display: block;
+    color: white;
+
+    span {
+        position: relative;
+        left: 50px;
+        font-family: 'Nothing You Could Do', cursive;
+        color: white;
+        font-size: 1.1em;
+        display: inline-block;
+    }
+
+    .arrow {
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+    }
 }
 
 .moderate, .verbose {
@@ -109,10 +131,49 @@ section#career ul.list {
     display: none;
     position: relative;
 }
-/*
-body.show-moderate span.moderate {
+
+.slider-verbosity {
+    width: 100px;
     display: inline-block;
+    vertical-align: text-bottom;
 }
-body.show-verbose span.verbose {
-    display: inline-block;
-}*/
+
+.slider-verbosity > .dragger {
+    background: $mahBloo;
+
+    -webkit-box-shadow: inset 0 2px 2px rgba(255,255,255,0.5), 0 2px 8px rgba(0,0,0,0.2);
+    -moz-box-shadow: inset 0 2px 2px rgba(255,255,255,0.5), 0 2px 8px rgba(0,0,0,0.2);
+    box-shadow: inset 0 2px 2px rgba(255,255,255,0.5), 0 2px 8px rgba(0,0,0,0.2);
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+
+    border: 1px solid #496805;
+    width: 16px;
+    height: 16px;
+}
+
+.slider-verbosity > .track, .slider-verbosity > .highlight-track {
+    background: #fff;
+
+    -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+    -moz-box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+
+    border: 1px solid #aaa;
+    height: 4px;
+}
+
+.slider-verbosity > .highlight-track {
+    background-color: #8DCA09;
+    background: -webkit-linear-gradient(top, #8DCA09, #72A307);
+    background: -moz-linear-gradient(top, #8DCA09, #72A307);
+    background: linear-gradient(top, #8DCA09, #72A307);
+
+    border-color: #496805;
+}

@@ -3,95 +3,99 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="stylesheet" href="styles/main.css">
-        <link rel="stylesheet" href="styles/animations.css">
-        <link href='http://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
-        <!-- build:js scripts/vendor/modernizr.js -->
-        <script src="components/modernizr/modernizr.js"></script>
-        <!-- endbuild -->
-    </head>
-    <body data-spy="scroll" data-target="#siteNav">
-        <div id="siteNav" class="navbar navbar-fixed-top navbar-inverse">
-            <div class="navbar-inner">
-                <ul class="nav">
-                    <li class="active"><a href="#about">About</a></li>
-                    <li><a href="#career">Career</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#interests">Interests</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body data-spy="scroll" data-target="#siteNav">
+    <div id="siteNav" class="navbar navbar-fixed-top navbar-inverse">
+      <div class="navbar-inner">
+        <ul class="nav">
+          <li class="active"><a href="#about">About</a></li>
+          <li><a href="#career">Career</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#interests">Interests</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <header id="jumbotron">
+    	<div id="verbosity-meter-container">
+      	<span><img src="images/arrow.svg" width=15 height=15 class="arrow" /> Choose your level of verbosity! </span><br>
+				Terse <input type="text" data-slider="true" data-slider-step="1" data-slider-range="1,3" data-slider-snap="true" data-slider-theme="verbosity"> Verbose
+			</div>
+      <!-- <div id="verbosity-meter" class="btn-group" data-toggle="buttons-radio">
+        <button type="button" class="btn btn-primary active" data-verbosity="terse">Terse</button>
+        <button type="button" class="btn btn-primary" data-verbosity="moderate">Moderate</button>
+        <button type="button" class="btn btn-primary" data-verbosity="verbose">Verbose</button>
+      </div> -->
+
+      <div class="inner" style="display: table; width: 10px;">
+        <div style="display: table-cell;">
+        <img class="selfie" width=200 height=200 src="//gravatar.com/avatar/e7c064c43f9a2e3deaae9488e51a46ac?s=200">
+        <h1 class="">Sam<span class="moderate">uel</span><span class="verbose"> C.</span> Day</h1>
+        <br/>
+        <summary>... is a <span class="moderate">23 year old</span> <span class="verbose">polyglot, full-stack</span> software engineer from <span class="moderate">Brisbane,</span> Australia<span class="verbose"> that enjoys coffee, music, long walks on the beach, and talking alot</span>.</summary>
         </div>
+      </div>
+    </header>
 
-        <header id="jumbotron">
-            <div id="verbosity-meter" class="btn-group" data-toggle="buttons-radio">
-              <button type="button" class="btn btn-primary active" data-verbosity="terse">Terse</button>
-              <button type="button" class="btn btn-primary" data-verbosity="moderate">Moderate</button>
-              <button type="button" class="btn btn-primary" data-verbosity="verbose">Verbose</button>
-            </div>
+    <section id="about">
+      <h2>Hey.</h2>
+      <p>If you're reading this, chances are you're either my potential
+      future employer, secret admirer/stalker, or a casual netizen who
+      got bored of pictures of cute kittens and Facebook. Whatever the
+      case, welcome! You're a great <del>guy</del> <del>gal</del> <del>
+      crawler bot</del> entity. I think we can be friends!</p>
 
-            <div class="inner" style="display: table; width: 10px;">
-                <div style="display: table-cell;">
-                <img class="selfie" width=200 height=200 src="//gravatar.com/avatar/e7c064c43f9a2e3deaae9488e51a46ac?s=200">
-                <h1 class="">Sam<span class="moderate">uel</span><span class="verbose"> C.</span> Day</h1>
-                <br/>
-                <summary>... is a <span class="moderate">23 year old</span> <span class="verbose">polyglot, full-stack</span> software engineer from <span class="moderate">Brisbane,</span> Australia<span class="verbose"> that enjoys coffee, music, long walks on the beach, and talking alot</span>.</summary>
-                </div>
-            </div>
-        </header>
+      <p>But seriously though, thanks for taking the time to check out my
+      page. People like you make the blood, sweat, and tears that went
+      into the production of this page all worthwhile. You've made someone
+      very happy. You can go through the rest of today telling yourself
+      "Hey. I made a difference for that guy on the internet today".</p>
 
-        <section id="about">
-            <h2>Hey.</h2>
-            <p>If you're reading this, chances are you're either my potential
-            future employer, secret admirer/stalker, or a casual netizen who
-            got bored of pictures of cute kittens and Facebook. Whatever the
-            case, welcome! You're a great <del>guy</del> <del>gal</del> <del>
-            crawler bot</del> entity. I think we can be friends!</p>
+      <p>So anyway, my name is Samuel Day (just in case you didn't catch
+      that from the giant hero-unit above), but I prefer Sam. I write code
+      for a living. I live in Brisbane, the capital of sunny Queensland,
+      Australia, with my gorgeous partner, Melissa, and my adorable French
+      Bulldog, <a href="http://www.instagram.com/timotym" target="_blank">
+      Timo</a>. I have a pretty sweet job at Wotifgroup Pty Ltd, where I
+      work on many of the systems that power the
+      <a href="http://www.wotif.com" target="_blank">Wotif.com</a> site,
+      along with a large team comprised of many awesome guys and gals.</p>
 
-            <p>But seriously though, thanks for taking the time to check out my
-            page. People like you make the blood, sweat, and tears that went
-            into the production of this page all worthwhile. You've made someone
-            very happy. You can go through the rest of today telling yourself
-            "Hey. I made a difference for that guy on the internet today".</p>
+      <p>The point of the page is to act as both a little "About Me". It's
+      also here to take up a few bytes of the Internets. Oh, and I link to
+      it as my CV-of-sorts from my resume. If you would be so kind as to
+      scroll the page with your mouse/finger, you'll find out more about
+      me. It's gonna be fun! Get excited!</p>
+    </section>
 
-            <p>So anyway, my name is Samuel Day (just in case you didn't catch
-            that from the giant hero-unit above), but I prefer Sam. I write code
-            for a living. I live in Brisbane, the capital of sunny Queensland,
-            Australia, with my gorgeous partner, Melissa, and my adorable French
-            Bulldog, <a href="http://www.instagram.com/timotym" target="_blank">
-            Timo</a>. I have a pretty sweet job at Wotifgroup Pty Ltd, where I
-            work on many of the systems that power the
-            <a href="http://www.wotif.com" target="_blank">Wotif.com</a> site,
-            along with a large team comprised of many awesome guys and gals.</p>
+    <section id="career">
+      <div class="inner">
+        <h2>Career</h2>
+        <p>I've been here and there. Some people paid me to be in some
+        of those places. Here's who:</p>
 
-            <p>The point of the page is to act as both a little "About Me". It's
-            also here to take up a few bytes of the Internets. Oh, and I link to
-            it as my CV-of-sorts from my resume. If you would be so kind as to
-            scroll the page with your mouse/finger, you'll find out more about
-            me. It's gonna be fun! Get excited!</p>
-        </section>
-
-        <section id="career">
-            <div class="inner">
-                <h2>Career</h2>
-                <p>I've been here and there. Some people paid me to be in some
-                of those places. Here's who:</p>
-
-                <ul class="list">
-                    <li>
-                        <img src="images/wotif.png"/>
-                        <h4>Wotifgroup Pty Ltd</h4>
-                        <b>Intermediate Software Developer</b><br/>
-                        <i>September 2011 - Present</i>
+        <ul class="list">
+          <li>
+            <img src="images/wotif.png"/>
+            <h4>Wotifgroup Pty Ltd</h4>
+            <b>Intermediate Software Developer</b><br/>
+            <i>September 2011 - Present</i>
 <p>Wotif has been a very special experience for me, primarily because it is the
 first large-scale company I've worked for - both in traffic/revenue and number
 of fellow employees.</p>
@@ -114,166 +118,167 @@ those around me, just as I have been inspired by many of my peers in the Milton
 office.</p>
 
 <div class="tldr">
-    <h5>TL;DR</h5>
-    <ul>
-        <li>Worked on several high profile projects on main Wotif.com site.</li>
-        <li>Demonstrated impressive depth and breadth of technical knowledge.</li>
-        <li>Committed in many extra-curricular company duties.</li>
-        <li>Worked very closely and effectively with every discipline: Business
-        Analysts, Project Management, Architecture, Operations staff, Senior &
-        Lead Developers, fellow Developers.</li>
-    </ul>
+  <h5>TL;DR</h5>
+  <ul>
+    <li>Worked on several high profile projects on main Wotif.com site.</li>
+    <li>Demonstrated impressive depth and breadth of technical knowledge.</li>
+    <li>Committed in many extra-curricular company duties.</li>
+    <li>Worked very closely and effectively with every discipline: Business
+    Analysts, Project Management, Architecture, Operations staff, Senior &
+    Lead Developers, fellow Developers.</li>
+  </ul>
 </div>
 
-                    </li>
+          </li>
 
-                    <li>
-                        <img src="images/sauce.png">
-                        <h4>Sauce Software Pty Ltd</h4>
-                        <b>Web Developer</b><br/>
-                        <i>2009 - Present</i>
+          <li>
+            <img src="images/sauce.png">
+            <h4>Sauce Software Pty Ltd</h4>
+            <b>Web Developer</b><br/>
+            <i>2009 - Present</i>
 <p>
-    At Sauce Software, I was responsible for initial estimation, analysis,
-    design, implementation and deployment for many medium sized web applications
-    for a range of clients. Many of the projects I worked on were time and
-    budget sensitive, and I was able to deliver quality results on time and on
-    budget in most cases. I was also tasked with maintaining several original
-    IP systems Sauce had implemented.</p>
+  At Sauce Software, I was responsible for initial estimation, analysis,
+  design, implementation and deployment for many medium sized web applications
+  for a range of clients. Many of the projects I worked on were time and
+  budget sensitive, and I was able to deliver quality results on time and on
+  budget in most cases. I was also tasked with maintaining several original
+  IP systems Sauce had implemented.</p>
 <p>
-    In additional to programming duties, I was also the system administrator for
-    Sauce's production environment, where a large number of domains were being
-    hosted. I was also responsible for selling and implementing the idea to move
-    to a virtualized hosting environment, which cut hosting costs in half for
-    Sauce, and provided a higher level of fault tolerance and isolation of our
-    shared hosting clients.</p>
+  In additional to programming duties, I was also the system administrator for
+  Sauce's production environment, where a large number of domains were being
+  hosted. I was also responsible for selling and implementing the idea to move
+  to a virtualized hosting environment, which cut hosting costs in half for
+  Sauce, and provided a higher level of fault tolerance and isolation of our
+  shared hosting clients.</p>
 <p>
-    When it came time for me to move on to Wotif.com Pty Ltd, I was asked to
-    remain involved with Sauce. I still assist with system administation duties,
-    estimation and development work, and other consultation services.</p>
+  When it came time for me to move on to Wotif.com Pty Ltd, I was asked to
+  remain involved with Sauce. I still assist with system administation duties,
+  estimation and development work, and other consultation services.</p>
 
 <div class="tldr">
-    <h5>TL;DR</h5>
-    <ul>
-        <li>Involved in every phase of SDLC for many medium sized web
-            applications</li>
-        <li>Delivery of projects on-time, and on-budget.</li>
-        <li>Linux system administration of several servers</li>
-        <li>Conceptualized and handled migration to virtualized hosting
-            environment for increased reliability and reduced hosting costs.</li>
-    </ul>
+  <h5>TL;DR</h5>
+  <ul>
+    <li>Involved in every phase of SDLC for many medium sized web
+      applications</li>
+    <li>Delivery of projects on-time, and on-budget.</li>
+    <li>Linux system administration of several servers</li>
+    <li>Conceptualized and handled migration to virtualized hosting
+      environment for increased reliability and reduced hosting costs.</li>
+  </ul>
 </div>
-                    </li>
+          </li>
 
-                    <li>
-                        <img src="images/pegg.png">
-                        <h4>Private Equity Gateway Group</h4>
-                        <b>Programmer</b><br/>
-                        <i>2008 - 2009</i><br/>
-                         <p>Lorizzle ipsizzle dolor sit amizzle, izzle adipiscing elit. Nullizzle sapizzle velizzle, that's the shizzle volutpizzle, suscipit mah nizzle, gravida mofo, dang. Pellentesque egizzle fo shizzle mah nizzle fo rizzle, mah home g-dizzle. Ass erizzle. Cool at fizzle dapibizzle check out this tempizzle break it down. Mauris stuff nibh et turpis. For sure in tortor. Pellentesque stuff rhoncus nisi. In hizzle habitasse yo mamma dictumst. Crackalackin dapibus. Curabitizzle own yo' urna, fo shizzle ghetto, mattis ac, eleifend vitae, nunc. Phat suscipizzle. Integizzle boom shackalack rizzle stuff .</p>
-
-<p>Etizzle bow wow wow magna sed augue doggy accumsan. Aenizzle in est. Vivamizzle mauris dizzle, viverra gangster, facilisizzle id, crunk izzle, erizzle. Izzle pot ipsizzle fo izzle black orci black et boofron posuere cubilia Break yo neck, yall; Stuff dolizzle. Bow wow wow faucibizzle. Maecenas pharetra blandizzle quizzle. Brizzle rutrizzle aliquet check out this. I saw beyonces tizzles and my pizzle went crizzle dope. You son of a bizzle we gonna chung mah nizzle, venenatis eu, nizzle ass, blandizzle ass, check it out.</p>
-                    </li>
-
-                    <li>
-                        <img src="images/harveynorman.png">
-                        <h4>Harvey Norman (Upper Mt Gravatt)</h4>
-                        <b>Retail Salesperson</b><br/>
-                        <i>2006 - 2007</i><br/>
-                         <p>Lorizzle ipsizzle dolor sit amizzle, izzle adipiscing elit. Nullizzle sapizzle velizzle, that's the shizzle volutpizzle, suscipit mah nizzle, gravida mofo, dang. Pellentesque egizzle fo shizzle mah nizzle fo rizzle, mah home g-dizzle. Ass erizzle. Cool at fizzle dapibizzle check out this tempizzle break it down. Mauris stuff nibh et turpis. For sure in tortor. Pellentesque stuff rhoncus nisi. In hizzle habitasse yo mamma dictumst. Crackalackin dapibus. Curabitizzle own yo' urna, fo shizzle ghetto, mattis ac, eleifend vitae, nunc. Phat suscipizzle. Integizzle boom shackalack rizzle stuff .</p>
+          <li>
+            <img src="images/pegg.png">
+            <h4>Private Equity Gateway Group</h4>
+            <b>Programmer</b><br/>
+            <i>2008 - 2009</i><br/>
+             <p>Lorizzle ipsizzle dolor sit amizzle, izzle adipiscing elit. Nullizzle sapizzle velizzle, that's the shizzle volutpizzle, suscipit mah nizzle, gravida mofo, dang. Pellentesque egizzle fo shizzle mah nizzle fo rizzle, mah home g-dizzle. Ass erizzle. Cool at fizzle dapibizzle check out this tempizzle break it down. Mauris stuff nibh et turpis. For sure in tortor. Pellentesque stuff rhoncus nisi. In hizzle habitasse yo mamma dictumst. Crackalackin dapibus. Curabitizzle own yo' urna, fo shizzle ghetto, mattis ac, eleifend vitae, nunc. Phat suscipizzle. Integizzle boom shackalack rizzle stuff .</p>
 
 <p>Etizzle bow wow wow magna sed augue doggy accumsan. Aenizzle in est. Vivamizzle mauris dizzle, viverra gangster, facilisizzle id, crunk izzle, erizzle. Izzle pot ipsizzle fo izzle black orci black et boofron posuere cubilia Break yo neck, yall; Stuff dolizzle. Bow wow wow faucibizzle. Maecenas pharetra blandizzle quizzle. Brizzle rutrizzle aliquet check out this. I saw beyonces tizzles and my pizzle went crizzle dope. You son of a bizzle we gonna chung mah nizzle, venenatis eu, nizzle ass, blandizzle ass, check it out.</p>
-                    </li>
+          </li>
 
-                    <li>
-                        <img src="images/daymedia.png">
-                        <h4>Daymedia</h4>
-                        <b>Web Developer</b><br/>
-                        <i>2005 - 2008</i><br/>
-                        <p>Lorizzle ipsizzle dolor sit amizzle, izzle adipiscing elit. Nullizzle sapizzle velizzle, that's the shizzle volutpizzle, suscipit mah nizzle, gravida mofo, dang. Pellentesque egizzle fo shizzle mah nizzle fo rizzle, mah home g-dizzle. Ass erizzle. Cool at fizzle dapibizzle check out this tempizzle break it down. Mauris stuff nibh et turpis. For sure in tortor. Pellentesque stuff rhoncus nisi. In hizzle habitasse yo mamma dictumst. Crackalackin dapibus. Curabitizzle own yo' urna, fo shizzle ghetto, mattis ac, eleifend vitae, nunc. Phat suscipizzle. Integizzle boom shackalack rizzle stuff .</p>
+          <li>
+            <img src="images/harveynorman.png">
+            <h4>Harvey Norman (Upper Mt Gravatt)</h4>
+            <b>Retail Salesperson</b><br/>
+            <i>2006 - 2007</i><br/>
+             <p>Lorizzle ipsizzle dolor sit amizzle, izzle adipiscing elit. Nullizzle sapizzle velizzle, that's the shizzle volutpizzle, suscipit mah nizzle, gravida mofo, dang. Pellentesque egizzle fo shizzle mah nizzle fo rizzle, mah home g-dizzle. Ass erizzle. Cool at fizzle dapibizzle check out this tempizzle break it down. Mauris stuff nibh et turpis. For sure in tortor. Pellentesque stuff rhoncus nisi. In hizzle habitasse yo mamma dictumst. Crackalackin dapibus. Curabitizzle own yo' urna, fo shizzle ghetto, mattis ac, eleifend vitae, nunc. Phat suscipizzle. Integizzle boom shackalack rizzle stuff .</p>
 
 <p>Etizzle bow wow wow magna sed augue doggy accumsan. Aenizzle in est. Vivamizzle mauris dizzle, viverra gangster, facilisizzle id, crunk izzle, erizzle. Izzle pot ipsizzle fo izzle black orci black et boofron posuere cubilia Break yo neck, yall; Stuff dolizzle. Bow wow wow faucibizzle. Maecenas pharetra blandizzle quizzle. Brizzle rutrizzle aliquet check out this. I saw beyonces tizzles and my pizzle went crizzle dope. You son of a bizzle we gonna chung mah nizzle, venenatis eu, nizzle ass, blandizzle ass, check it out.</p>
-                    </li>
-                </ul>
-            </div>
-        </section>
+          </li>
 
-        <section id="experience">
-            <div class="inner">
-                <h2>Experience</h2>
-            </div>
-        </section>
+          <li>
+            <img src="images/daymedia.png">
+            <h4>Daymedia</h4>
+            <b>Web Developer</b><br/>
+            <i>2005 - 2008</i><br/>
+            <p>Lorizzle ipsizzle dolor sit amizzle, izzle adipiscing elit. Nullizzle sapizzle velizzle, that's the shizzle volutpizzle, suscipit mah nizzle, gravida mofo, dang. Pellentesque egizzle fo shizzle mah nizzle fo rizzle, mah home g-dizzle. Ass erizzle. Cool at fizzle dapibizzle check out this tempizzle break it down. Mauris stuff nibh et turpis. For sure in tortor. Pellentesque stuff rhoncus nisi. In hizzle habitasse yo mamma dictumst. Crackalackin dapibus. Curabitizzle own yo' urna, fo shizzle ghetto, mattis ac, eleifend vitae, nunc. Phat suscipizzle. Integizzle boom shackalack rizzle stuff .</p>
 
-        <section id="interests">
-            <div class="inner">
-                <h2>Interests</h2>
-            </div>
-        </section>
+<p>Etizzle bow wow wow magna sed augue doggy accumsan. Aenizzle in est. Vivamizzle mauris dizzle, viverra gangster, facilisizzle id, crunk izzle, erizzle. Izzle pot ipsizzle fo izzle black orci black et boofron posuere cubilia Break yo neck, yall; Stuff dolizzle. Bow wow wow faucibizzle. Maecenas pharetra blandizzle quizzle. Brizzle rutrizzle aliquet check out this. I saw beyonces tizzles and my pizzle went crizzle dope. You son of a bizzle we gonna chung mah nizzle, venenatis eu, nizzle ass, blandizzle ass, check it out.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-        <section id="contact">
-            <div class="inner">
-                <h2>Contact</h2>
-            </div>
-        </section>
+    <section id="experience">
+      <div class="inner">
+        <h2>Experience</h2>
+      </div>
+    </section>
 
-        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <section id="interests">
+      <div class="inner">
+        <h2>Interests</h2>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="inner">
+        <h2>Contact</h2>
+      </div>
+    </section>
+
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 
-        <!--
-        <div class="container">
-            <div class="hero-unit">
-                <h1>Samuel C. Day</h1>
-                <p>You now have</p>
-                <ul>
-                    <li>HTML5 Boilerplate</li>
-                    <li>Twitter Bootstrap</li>
-                </ul>
-                <p>installed.</p>
-                <h3>Enjoy coding! - Yeoman</h3>
-            </div>
-        </div> -->
+    <!--
+    <div class="container">
+      <div class="hero-unit">
+        <h1>Samuel C. Day</h1>
+        <p>You now have</p>
+        <ul>
+          <li>HTML5 Boilerplate</li>
+          <li>Twitter Bootstrap</li>
+        </ul>
+        <p>installed.</p>
+        <h3>Enjoy coding! - Yeoman</h3>
+      </div>
+    </div> -->
 
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
+    <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
 
-        <!-- build:js scripts/main.js -->
-        <script src="components/jquery/jquery.js"></script>
-        <script src="components/jquery-throttle-debounce/jquery.ba-throttle-debounce.js"></script>
-        <script src="components/jquery-easing/jquery.easing.js"></script>
-        <script src="components/javascript-state-machine/state-machine.js"></script>
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="components/jquery/jquery.js"></script>
+    <script src="components/jquery-throttle-debounce/jquery.ba-throttle-debounce.js"></script>
+    <script src="components/jquery-easing/jquery.easing.js"></script>
+    <script src="components/javascript-state-machine/state-machine.js"></script>
+    <script src="components/jquery-simple-slider/js/simple-slider.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
 
-        <!-- build:js(.tmp) scripts/coffee.js -->
-        <script src="scripts/site.js"></script>
-        <!-- endbuild -->
+    <!-- build:js(.tmp) scripts/coffee.js -->
+    <script src="scripts/site.js"></script>
+    <!-- endbuild -->
 
-        <!-- build:js scripts/plugins.js -->
-        <!--
-        <script src="components/sass-bootstrap/js/bootstrap-affix.js"></script>
-        <script src="components/sass-bootstrap/js/bootstrap-alert.js"></script>
-        <script src="components/sass-bootstrap/js/bootstrap-dropdown.js"></script>
-        <script src="components/sass-bootstrap/js/bootstrap-tooltip.js"></script>
-        <script src="components/sass-bootstrap/js/bootstrap-modal.js"></script>
-        <script src="components/sass-bootstrap/js/bootstrap-transition.js"></script>-->
-        <script src="components/sass-bootstrap/js/bootstrap-button.js"></script>
-        <!--<script src="components/sass-bootstrap/js/bootstrap-popover.js"></script>
-        <script src="components/sass-bootstrap/js/bootstrap-typeahead.js"></script>
-        <script src="components/sass-bootstrap/js/bootstrap-carousel.js"></script>
-        -->
-        <script src="components/sass-bootstrap/js/bootstrap-scrollspy.js"></script>
-        <!--
-        <script src="components/sass-bootstrap/js/bootstrap-collapse.js"></script>
-        <script src="components/sass-bootstrap/js/bootstrap-tab.js"></script>
-        -->
-        <!-- endbuild -->
+    <!-- build:js scripts/plugins.js -->
+    <!--
+    <script src="components/sass-bootstrap/js/bootstrap-affix.js"></script>
+    <script src="components/sass-bootstrap/js/bootstrap-alert.js"></script>
+    <script src="components/sass-bootstrap/js/bootstrap-dropdown.js"></script>
+    <script src="components/sass-bootstrap/js/bootstrap-tooltip.js"></script>
+    <script src="components/sass-bootstrap/js/bootstrap-modal.js"></script>
+    <script src="components/sass-bootstrap/js/bootstrap-transition.js"></script>-->
+    <!--<script src="components/sass-bootstrap/js/bootstrap-button.js"></script>-->
+    <!--<script src="components/sass-bootstrap/js/bootstrap-popover.js"></script>
+    <script src="components/sass-bootstrap/js/bootstrap-typeahead.js"></script>
+    <script src="components/sass-bootstrap/js/bootstrap-carousel.js"></script>
+    -->
+    <script src="components/sass-bootstrap/js/bootstrap-scrollspy.js"></script>
+    <!--
+    <script src="components/sass-bootstrap/js/bootstrap-collapse.js"></script>
+    <script src="components/sass-bootstrap/js/bootstrap-tab.js"></script>
+    -->
+    <!-- endbuild -->
 </body>
 </html>

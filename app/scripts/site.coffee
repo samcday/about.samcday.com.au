@@ -39,6 +39,7 @@ class BetterVerbosityMeter
 
 moderateVerbosity = new BetterVerbosityMeter "moderate", 300
 verboseVerbosity = new BetterVerbosityMeter "verbose", 300
+extremeVerbosity = new BetterVerbosityMeter "extreme", 300
 
 jQuery ($) ->
     $win = $ window
@@ -65,9 +66,10 @@ jQuery ($) ->
 
     siteInit = ->
         ($ "#verbosity-meter-container input").bind "slider:changed", (event, data) ->
-            level = ["terse", "moderate", "verbose"][data.value - 1]
-            moderateVerbosity.go if level is "terse" then "hide" else "show"
-            verboseVerbosity.go if level is "verbose" then "show" else "hide"
+            level = data.value
+            moderateVerbosity.go if (level > 1) then "show" else "hide"
+            verboseVerbosity.go if (level > 2) then "show" else "hide"
+            extremeVerbosity.go if (level > 3) then "show" else "hide"
 
         jumbotronHeight = $jumbotron.outerHeight()
         $win.scroll $.throttle 1000/20, ->

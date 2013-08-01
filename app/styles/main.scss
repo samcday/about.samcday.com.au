@@ -118,22 +118,22 @@ section#career ul.list {
     }
 }
 
-.moderate, .verbose {
+.moderate, .verbose, .extreme {
     -webkit-animation-duration: 400ms !important;
     animation-duration: 400ms !important;
+    display: none;
+    position: relative;
+    display: none;
+    position: relative;
 }
 
 .moderate {
-    display: none;
-    position: relative;
 }
 .verbose {
-    display: none;
-    position: relative;
 }
 
 .slider-verbosity {
-    width: 100px;
+    width: 120px;
     display: inline-block;
     vertical-align: text-bottom;
 }
